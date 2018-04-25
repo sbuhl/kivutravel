@@ -31,7 +31,8 @@ svg{
   background: url('../img/hero/tchegera.jpg') 
 }
 .whyKT{
-	padding-top:20px;
+	margin:$global-margin;
+	padding:$global-padding;
 	text-align: center;
 	h2{
 		color:$primary-color;
@@ -39,6 +40,15 @@ svg{
 	}
 	p{
 		text-align: justify;
+		color:$black;
+	}
+	.cell{
+		padding:$global-padding;
+	}
+	.cell:hover{
+		box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+		border-radius:5px;
+		cursor:pointer ;
 	}
 }
 .activities{
@@ -62,6 +72,16 @@ svg{
 		font-size: 1rem;
 		text-align: center;
 	}
+	.card > a{
+		color:$black;
+	}
+	.card{
+		border:0;
+	}
+	.card:hover{
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+		border-radius:5px;
+	}
 }
 
 .book{
@@ -70,8 +90,13 @@ svg{
 	h5{
 		color:$primary-color;
 		font-size: 1.5em;
-		font-weight: bold;
+		font-weight: light;
 	}
+	    
+   	.btn-centered{
+   		align-self: center;
+   		text-align: center;
+   	} 
 }
 
 .footer{
