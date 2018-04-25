@@ -41,4 +41,68 @@ svg{
 		text-align: justify;
 	}
 }
+.activities{
+	padding-top : 50px;
+	.header{
+		color:$black;	
 
+		.encart{
+			border-left:2px solid $secondary-color;
+			padding-left: 10px;
+		}
+		.encart-link{
+			padding-left: 10px;
+		}
+	}
+	h1.card-title{
+		font-size:1.2rem;
+		text-align: center;
+	}
+	h2.card-subtitle{
+		font-size: 1rem;
+		text-align: center;
+	}
+}
+
+.book{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	h5{
+		color:$primary-color;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+}
+
+.footer{
+	border-top: 1px solid $secondary-color;
+	padding-top:$global-padding;
+	h2{
+		text-transform: uppercase;
+		color:$dark-gray;
+		font-size: 1.1em;
+	}
+	ul{
+		margin-left: 0;
+	}
+	li{
+		list-style-type: none;
+		i{
+			padding-right:5px;
+		}
+		a{
+			color:$dark-gray;
+			&:hover{
+				color:$black;
+			}
+		}
+	}
+	p.copyright{
+		color:$dark-gray;
+		text-align: center;
+		font-size: 0.7em;
+	}
+}
+.footer-logo{
+	align-self: center;
+}
