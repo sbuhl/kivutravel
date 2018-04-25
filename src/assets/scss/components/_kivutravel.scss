@@ -1,0 +1,44 @@
+body{
+	border-top:2px solid $primary-color;
+}
+svg{
+	border:0;
+	fill:$primary-color;
+}
+.logo{
+	height: 80px;
+}
+.topbar-responsive,
+.topbar-responsive .menu{
+	background-color:transparent!important;
+}
+.topbar-responsive{
+	background : transparent;
+}
+.topbar-responsive .menu a{
+	text-transform: uppercase;
+	color:$black!important;
+	&:hover{
+		color:$primary-color!important;
+	}
+}
+.menu-icon::after{
+	background: $black;
+	box-shadow: 0 7px 0 $black, 0 14px 0 $black;
+}
+
+.hero-full-screen {
+  background: url('../img/hero/tchegera.jpg') 
+}
+.whyKT{
+	padding-top:20px;
+	text-align: center;
+	h2{
+		color:$primary-color;
+		font-size: 1.25em;
+	}
+	p{
+		text-align: justify;
+	}
+}
+
