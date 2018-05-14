@@ -82,6 +82,10 @@ h2.card-subtitle{
 .card:hover{
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 	border-radius:5px;
+	cursor:pointer;
+}
+.card-part:hover{
+	box-shadow:none;
 }
 
 .book{
@@ -153,4 +157,29 @@ h2.card-subtitle{
 }
 .footer-logo{
 	align-self: center;
+}
+p.partner{
+	font-size: 0.8em;
+}
+label{
+	text-transform: uppercase;
+	display: block;
+	font-size: 0.8em;
+	font-weight: 700;
+	margin: 20px 0px;
+}
+input{
+	border: 0 !important;
+	border-bottom: 1px solid #AAAAAA !important;
+	padding-bottom: 10px;
+	box-shadow: none !important;
+}
+textarea{
+	border: 0;
+	border-bottom: 1px solid #AAAAAA;
+	padding-bottom: 10px;
+	box-shadow: none !important;
+}
+span.bold{
+	font-weight: 500;
 }
