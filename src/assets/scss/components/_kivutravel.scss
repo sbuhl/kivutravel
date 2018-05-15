@@ -199,9 +199,10 @@ span.bold{
 	color:white;
 	display: block;
 	padding: 1.25rem 1.5rem;
-	font-size: 0.75rem;
+	font-size: 0.9rem;
 	line-height: 1;
 	text-transform: uppercase;
+	border-bottom:3px solid $primary-color;
 }
 .programme-calendar{
 	margin-top:2em;
@@ -212,4 +213,40 @@ span.bold{
 }
 .activities{
 	margin-top: 2em;
+}
+.tourisme-responsable{
+	background-color:$primary-color;
+	margin-top:2em !important;
+}
+.tabs{
+	border-color:$primary-color;
+	display:flex;
+}
+.tabs-content{
+	border-color:$primary-color;
+}
+.tabs-title{
+	flex-grow:1;
+	text-align: center;
+}
+.tabs-title > a{
+	font-size: 0.9rem;
+}
+.tabs-title > a:focus, .tabs-title > a[aria-selected="true"]{
+	font-weight: 900;
+	border-bottom:3px solid $primary-color;
+	background-color:transparent;
+}
+
+.tabs-flex{
+	display:flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.tabs-flex > li{
+	flex:1;
+}
+.orbit-bullets button{
+	width:0.5rem;
+	height:0.5rem
 }
