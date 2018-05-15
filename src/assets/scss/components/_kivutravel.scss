@@ -183,3 +183,33 @@ textarea{
 span.bold{
 	font-weight: 500;
 }
+.jour{
+	color:$primary-color;
+}
+.day{
+	font-size: 3em;
+}
+.centrer{
+	align-self:center;
+	text-align: center;
+}
+.nbr-jours{
+	float:right;
+	background:$primary-color;
+	color:white;
+	display: block;
+	padding: 1.25rem 1.5rem;
+	font-size: 0.75rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.programme-calendar{
+	margin-top:2em;
+}
+.programme-jour{
+	border-bottom:1px solid $primary-color;
+	margin-top: 2em;
+}
+.activities{
+	margin-top: 2em;
+}
