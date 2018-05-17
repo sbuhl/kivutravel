@@ -1,5 +1,6 @@
 body{
 	border-top:2px solid $primary-color;
+	background:#ecf0f1;
 }
 svg{
 	border:0;
@@ -53,7 +54,7 @@ svg{
 	}
 }
 .header{
-	padding-top : $global-padding;
+	padding-top : 4rem;
 	padding-bottom: $global-padding;
 	color:$black;	
 
@@ -78,10 +79,12 @@ h2.card-subtitle{
 }
 .card{
 	border:0;
+	background: #67EA97;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
 }
 .card:hover{
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-	border-radius:5px;
 	cursor:pointer;
 }
 .card-part:hover{
@@ -249,4 +252,8 @@ span.bold{
 .orbit-bullets button{
 	width:0.5rem;
 	height:0.5rem
+}
+.box-height{
+	max-height:500px;
+	overflow:scroll;
 }
