@@ -221,16 +221,30 @@ span.bold{
 	background-color:$primary-color;
 	margin-top:2em !important;
 }
+.assist{
+	font-size: 1.4em;
+	font-weight: 200;
+}
 .tabs{
-	border-color:$primary-color;
+	background-color:transparent;
 	display:flex;
 }
 .tabs-content{
-	border-color:$primary-color;
+	border-color:transparent;
+	background-color: transparent;
+}
+.tabs-content > p{
+	color: rgb(40, 47, 51);
 }
 .tabs-title{
 	flex-grow:1;
 	text-align: center;
+}
+.tabs-title:hover{
+	background-color: transparent;
+}
+.tabs-title >a:hover{
+	background-color: transparent;
 }
 .tabs-title > a{
 	font-size: 0.9rem;
@@ -254,6 +268,18 @@ span.bold{
 	height:0.5rem
 }
 .box-height{
-	max-height:500px;
 	overflow:scroll;
+}
+ul,ol{
+	padding-left: 40px;
+}
+h4{
+	font-size: 1em;
+	font-weight: 700;
+}
+.vertical >li >a:hover,.vertical > li > a:focus{
+	background-color: rgb(196, 208, 218);
+}
+.assist-box{
+	padding-left:10px;
 }
