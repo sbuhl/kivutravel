@@ -237,6 +237,7 @@ span.bold{
 .tabs-content{
 	border-color:transparent;
 	background-color: transparent;
+	text-align: justify;
 }
 .tabs-content > p{
 	color: rgb(40, 47, 51);
@@ -301,4 +302,16 @@ ul.footer-list{
 }
 .accordion-title{
 	font-size:1em;
+	padding-right:3em;
+	line-height: 1.5em;
+}
+ul.accordion{
+	padding-left:0;
+}
+.tabs{
+	border:0;
+	padding-left:0;
+}
+.tabs-panel{
+	padding : 1rem 0;
 }
