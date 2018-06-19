@@ -29,12 +29,32 @@ svg{
 }
 
 .home-page {
-  background: url('../img/hero/tchegera.jpg') 
+  background: url('../img/hero/tchegera.jpg');
 }
 .assistance {
-	background: url('../img/hero/close-to-idjwi.jpg') 
+	background: url('../img/hero/close-to-idjwi.jpg');
 }
-
+.a-lire {
+	background: url('../img/hero/a-lire.jpg');
+}
+.about{
+	background: url('../img/hero/about.jpg');
+}
+.medias{
+	background: url('../img/hero/medias.jpg');
+}
+.press{
+	background: url('../img/hero/press.jpg');
+}
+.programs{
+	background: url('../img/hero/programs.jpg');
+}
+.contact{
+	background: url('../img/hero/contact.jpg');
+}
+.activities{
+	text-align: justify;
+}
 
 .whyKT{
 	margin:$global-margin;
