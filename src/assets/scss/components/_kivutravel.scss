@@ -55,6 +55,10 @@ svg{
 .activites{
 	background: url('../img/hero/activites.jpg');
 }
+
+.temoignages{
+	background: url('../img/testimonials/tchegera.jpg');
+}
 .activities{
 	text-align: justify;
 }
@@ -307,7 +311,7 @@ h4{
 	font-weight: 700;
 }
 .vertical >li >a:hover,.vertical > li > a:focus{
-	background-color: rgb(196, 208, 218);
+	// background-color: rgb(196, 208, 218);
 }
 .assist-box{
 	padding-left:10px;
