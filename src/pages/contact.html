@@ -37,33 +37,34 @@ title : Contactez-nous pour réservez votre voyage !
 	<div class="grid-x grid-margin-x">
 		<div class="cell">
 
-			<div class="form">
+			<form class="form" method="POST" action="contact-handler.php">
 		        <div class="row">
 		          	<div class="cell  cell-2">
 		            	<label for="firstname">Prénom</label>
-		            	<input type="text" placeholder="Entrez votre prénom">
+		            	<input type="text" placeholder="Entrez votre prénom" required>
 		          	</div>
 		          	<div class="cell  cell-2">
 		            	<label for="lastname">Nom</label>
-		            	<input type="text" placeholder="Entrez votre nom">
+		            	<input type="text" placeholder="Entrez votre nom" required>
 		          	</div>
 		        </div>
 		        <div class="row">
 		          	<div class="cell  cell-1">
-		          	  	<label for="Email">EMail</label>
-		            	<input type="text" placeholder="Entrez votre email">  
+		          	  	<label for="email">EMail</label>
+		            	<input type="email" placeholder="Entrez votre email" required>  
 		          	</div>
 		        </div>
 		        <div class="row">
 		          	<div class="cell  cell-1">
-		            	<label for="username">Message</label>
-		            	<textarea name="" id="" cols="30" rows="6" placeholder="Entrez votre message"></textarea>
+		            	<label for="message">Message</label>
+		            	<textarea name="message" id="" cols="30" rows="6" placeholder="Entrez votre message" required></textarea>
 		          	</div>
-		        </div>
+				</div>
+				
 		        <div class="row">
-		        	<button class="button large">Envoyer</button>
+		        	<input type="submit" class="button large" value="Envoyer"/>
 		        </div>
-		      </div>
+			</form>
 		</div>
 	</div>
 	<div class="grid-x grid-margin-x">
