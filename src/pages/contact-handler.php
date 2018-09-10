@@ -7,12 +7,14 @@
 
     $email_from = "info@kivutravel.com";
     $email_subject = "Demande d'information depuis le site web";
-    $email_body = "User name";
+    $email_body = "Visiteur : " . $firstname . " " . $lastname . "\n" . 
+                    "Email du visiteur : " . $email . "\n" .
+                    "Message : " . $body;
 
     $to = "s.buhl@hotmail.com";
     $headers = "From: ". $email_from;
 
     mail($to, $email_subject, $email_body, $headers);
-    headers("Location: contact.html");
+    header("Location: contact.html");
 
 ?>
