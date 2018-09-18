@@ -10,10 +10,6 @@ svg{
 span{
 	color:$primary-color;
 }
-em{
-	// font-weight:bold;
-	// font-style: normal;
-}
 .logo{
 	height: 80px;
 }
@@ -30,6 +26,9 @@ em{
 	&:hover{
 		color:$primary-color!important;
 	}
+}
+.grid-margin-x > .cell{
+	margin-top: 0.9375rem;
 }
 .menu-icon::after{
 	background: $black;
@@ -389,9 +388,6 @@ ul,ol{
 h4{
 	font-size: 1em;
 	font-weight: 700;
-}
-.vertical >li >a:hover,.vertical > li > a:focus{
-	// background-color: rgb(196, 208, 218);
 }
 .assist-box{
 	padding-left:10px;
