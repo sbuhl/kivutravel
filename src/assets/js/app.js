@@ -9,17 +9,36 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).ready(function(){
+
+    // Add all testimonies
     $.getJSON('https://codepen.io/SebastienCerrer/pen/YOBREQ.js')
-    .done( function(response) {
+    .done(function(response) {
         var testyList = '';
         $.each(response, function(index, testy ) {
-        testyList += "<div class='card-user-profile'><div class='card-section'><p class='card-user-profile-status'>";
-        testyList += testy.comment + "</p><p class='card-user-profile-name'>";
-        testyList += testy.author + "</p><p class='card-user-profile-info'>";
-        testyList += testy.origin + "</p></div></div>";
+            testyList += "<div class='card-user-profile'><div class='card-section'><p class='card-user-profile-status'>";
+            testyList += testy.comment + "</p><p class='card-user-profile-name'>";
+            testyList += testy.author + "</p><p class='card-user-profile-info'>";
+            testyList += testy.origin + "</p></div></div>";
         });
         $('#testy').html(testyList);
-    })
+    });
+
+    // Add one testimony randomly 
+    var $boxComment = $('#boxComment');
+    $.getJSON('https://codepen.io/SebastienCerrer/pen/YOBREQ.js', function(response) {
+        var max = Object.keys(response).length;
+        var randomNumber = randomNumberFromRange(0, max);
+        function randomNumberFromRange(min,max)
+        {
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        var testyIndiv = '';
+        testyIndiv += "<div class='englobe'><h5 class='full-width-testimonial-text'>";
+        testyIndiv += response[randomNumber].comment + "</h5><p class='full-width-testimonial-source'>";
+        testyIndiv += response[randomNumber].author + "</p><span class='full-width-testimonial-source-context'>";
+        testyIndiv += response[randomNumber].origin + "</span></div>";
+        $boxComment.html(testyIndiv);
+    });
 });
 
 
