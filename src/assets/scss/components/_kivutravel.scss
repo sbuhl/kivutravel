@@ -239,7 +239,9 @@ h2.card-subtitle{
 		}
 	}
 }
-
+.far, .fab{
+	padding-right:5px;
+}
 .footer{
 	border-top: 1px solid $secondary-color;
 	padding-top:$global-padding;
@@ -253,9 +255,7 @@ h2.card-subtitle{
 	}
 	li{
 		list-style-type: none;
-		i{
-			padding-right:5px;
-		}
+		
 		a{
 			color:$dark-gray;
 			&:hover{
