@@ -39,31 +39,30 @@ title : Contactez-nous pour réservez votre voyage !
 
 			<form class="form" method="POST" action="contact-handler.php">
 		        <div class="row">
-		          	<div class="cell  cell-2">
-		            	<label for="firstname">Prénom</label>
-		            	<input type="text" placeholder="Entrez votre prénom" required>
+		          	<div class="cell  cell-1">
+		            	<label for="name">Nom et Prénom</label>
+						<input name="name" type="text" placeholder="ex: John Doe" required>
+						<span class="error-message"></span>
 		          	</div>
-		          	<div class="cell  cell-2">
-		            	<label for="lastname">Nom</label>
-		            	<input type="text" placeholder="Entrez votre nom" required>
-					  </div>
-					  
 		        </div>
 		        <div class="row">
 		          	<div class="cell  cell-1">
-		          	  	<label for="email">EMail</label>
-		            	<input type="email" placeholder="Entrez votre email" required>  
+		          	  	<label for="email">E-mail</label>
+						<input name="email" type="email" placeholder="ex: john@doe.com" required> 
+						<span class="error-message"></span> 
+						<input type="text" name="address" id="address">
 		          	</div>
 		        </div>
 		        <div class="row">
 		          	<div class="cell  cell-1">
 		            	<label for="message">Message</label>
-		            	<textarea name="message" id="" cols="30" rows="6" placeholder="Entrez votre message" required></textarea>
-		          	</div>
+		            	<textarea name="message" id="" cols="30" rows="6" placeholder="ex: Bonjour, j'aimerais avoir plus d'informations sur le programme 18 jours. Nous sommes une famille de 4 personnes (2 adultes, 2 enfants de + de 15 ans..." required></textarea>
+						<span class="error-message"></span>  
+					</div>
 				</div>
 				
 		        <div class="row">
-		        	<input type="submit" class="button large" value="Envoyer"/>
+						<button type="submit" class="button large" id="envoyer"><i class="far fa-paper-plane"></i> Envoyer</button>
 		        </div>
 			</form>
 		</div>

@@ -39,7 +39,11 @@ $(document).ready(function(){
         testyIndiv += response[randomNumber].origin + "</span></div>";
         $boxComment.html(testyIndiv);
     });
+
+
 });
+
+
 
 
 $(document).foundation();
