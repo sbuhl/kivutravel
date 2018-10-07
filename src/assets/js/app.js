@@ -26,7 +26,9 @@ $(document).ready(function(){
     // Add one testimony randomly 
     var $boxComment = $('#boxComment');
     $.getJSON('https://codepen.io/SebastienCerrer/pen/YOBREQ.js', function(response) {
-        var max = Object.keys(response).length;
+        // var max = Object.keys(response).length;
+        // They prefer to have the testimony of 2018 only
+        var max = 11;
         var randomNumber = randomNumberFromRange(0, max);
         function randomNumberFromRange(min,max)
         {
