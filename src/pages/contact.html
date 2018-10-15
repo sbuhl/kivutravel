@@ -19,7 +19,7 @@ title : Contactez-nous pour réservez votre voyage !
 <article class="grid-container">
 	<div class="grid-x grid-margin-x header">
 		<div class="cell small-12 medium-6">
-			<h1>Contact</h1>	
+			<h1>Contactez-nous !</h1>	
 		</div>
 		
 		<div class="cell small-12 medium-6 ">
@@ -37,7 +37,7 @@ title : Contactez-nous pour réservez votre voyage !
 	<div class="grid-x grid-margin-x">
 		<div class="cell">
 
-			<form class="form" method="POST" action="contact-handler.php">
+			<form class="form" method="POST" action="contact-handler.php" id='i-recaptcha'>
 		        <div class="row">
 		          	<div class="cell  cell-1">
 		            	<label for="name">Nom et Prénom</label>
@@ -62,7 +62,9 @@ title : Contactez-nous pour réservez votre voyage !
 				</div>
 				
 		        <div class="row">
-						<button type="submit" class="button large" id="envoyer"><i class="far fa-paper-plane"></i> Envoyer</button>
+					<button type="submit" id="envoyer" class="button large g-recaptcha" data-sitekey="6Le74HMUAAAAAEaO19oHlyv1Is9hsPaSWBrrPciZ" data-callback="onSubmit">
+						<i class="far fa-paper-plane"></i> Envoyer
+					</button>
 		        </div>
 			</form>
 		</div>

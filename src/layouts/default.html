@@ -23,8 +23,14 @@
 
       gtag('config', 'UA-50437980-2');
     </script>
-    <script src='https://www.google.com/recaptcha/api.js?render=6Le74HMUAAAAAEaO19oHlyv1Is9hsPaSWBrrPciZ'></script>
-
+    {{#ifpage 'contact'}}
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <script>
+        function onSubmit(token) {
+            document.getElementById("i-recaptcha").submit();
+        }
+      </script>
+    {{/ifpage}}
     
   </head>
   <body>
@@ -37,13 +43,7 @@
     {{> footer}}
 
     <script src="{{root}}assets/js/app.js"></script>
-    <script>
-      grecaptcha.ready(function() {
-        grecaptcha.execute('6Le74HMUAAAAAEaO19oHlyv1Is9hsPaSWBrrPciZ', {action: 'action_name'})
-          .then(function(token) {
-            alert('capcha ok');
-          });
-        });
-      </script>
+
+    
   </body>
 </html>
