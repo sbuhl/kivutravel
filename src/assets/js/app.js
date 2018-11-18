@@ -7,8 +7,15 @@ import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
+$(document).foundation();
 
 $(document).ready(function(){
+        
+    var popup = new Foundation.Reveal($('#exampleModal1'));
+    popup.open();
+    if( $('.reveal').length === 0){
+        $( ".reveal-overlay" ).css( "display", "none" );
+    }
 
     // Add all testimonies
     $.getJSON('https://codepen.io/SebastienCerrer/pen/YOBREQ.js')
@@ -48,5 +55,4 @@ $(document).ready(function(){
 
 
 
-$(document).foundation();
 

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="fr">
   <head>
@@ -12,10 +11,29 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/app.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50437980-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-50437980-2');
+    </script>
+    
   </head>
   <body>
-
-      
+    
+    <!-- Modal -->
+        <div class="reveal" id="exampleModal1" data-reveal>
+          <a href="contact.html"><img src="assets/img/modal/amani2019.png" alt="Offre Kivu Travel x Amani 2019"></a>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- <p><button class="button" data-open="exampleModal1">Open Modal</button></p>-->   
+        <!-- End Modal    -->
     <div class="hero-full-screen home-page">
     	<div class="top-content-section">
     	  <div class="grid-container">
@@ -305,5 +323,7 @@
     	</div>
     </div>
     <script src="assets/js/app.js"></script>
+
+    
   </body>
 </html>
