@@ -9,13 +9,12 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 $(document).foundation();
 
-$(document).ready(function(){
+$(document).ready(function($){
         
-    var popup = new Foundation.Reveal($('#exampleModal1'));
-    popup.open();
-    if( $('.reveal').length === 0){
-        $( ".reveal-overlay" ).css( "display", "none" );
-    }
+    $('#exampleModal1').foundation('open');
+    // if( $('.reveal').length === 0){
+    //     $( ".reveal-overlay" ).css( "display", "none" );
+    // }
 
     // Add all testimonies
     $.getJSON('https://codepen.io/SebastienCerrer/pen/YOBREQ.js')
