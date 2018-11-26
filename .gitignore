@@ -4,5 +4,6 @@ npm-debug.log
 bower_components
 dist
 *.swp
-src/assets/video/Kivu-Travel-David-Clancy.mp4
+src/assets/img/Video-KT-DC.mp4
+src/assets/img/VideoKTDC.ogg
 *.psd
