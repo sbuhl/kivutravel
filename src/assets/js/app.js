@@ -11,7 +11,7 @@ $(document).foundation();
 
 $(document).ready(function($){
         
-    $('#exampleModal1').foundation('open');
+    //$('#exampleModal1').foundation('open');
     // if( $('.reveal').length === 0){
     //     $( ".reveal-overlay" ).css( "display", "none" );
     // }
@@ -47,7 +47,6 @@ $(document).ready(function($){
         testyIndiv += response[randomNumber].origin + "</span></div>";
         $boxComment.html(testyIndiv);
     });
-
 
 });
 
